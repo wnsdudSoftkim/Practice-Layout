@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- 참조 https://github.com/HeropCode/GitHub-Responsive-->
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GitHub</title>
+		<meta name="author" content ="HEROPY">
+		<meta name="description" content="Github-example">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--인터넷 익스플로어 렌더링과 관련-->
+		<meta property="og:type" content="website"> <!--외부에 제공할 정보 제공, 외부에 공유될때 표시되는 화면이 오픈그래프와 트위터 카드로 표현됨-->
+		<meta property="og:title" content="Github">
+		<meta property="og:description" content="Github-exemple">
+		<script src="javascript.js"></script>
+		<link rel="icon" href="favicon.png"> <!--상단에 페이지 이름옆에 아이콘이 뜸.-->
+		<link rel="apple-touch-icon" href="favicon.png"> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"><!--덮어쓰면 안되기 때문에 호출순서 앞으로 reset.css cdn-->
+		<link rel="stylesheet" href="css/style.css">
+		<!--//구글에 구글폰트 검색후  css에도 적용-->
+	<body>
+		<div class="body__container">
+			<!--BEM= css작명규칙 = 언더바 두번은 ~ 일부분 대쉬두번은 상태 대쉬한번은 일반적인 작명
+			btn success btn danger 은 btn--success btn--danger-->
+			<!--HEADER-->
+			<header class="section">
+				<div class="inner clearfix">
+					<div class="menu-group float--left">
+						<div class="logo">
+							<a href="">GitHub</a>
+						</div>
+						<ul class="main-menu">
+							<li><a href="">Personal</a></li>
+							<li><a href="">Open source</a></li>	
+							<li><a href="">Business</a></li>
+							<li><a href="">Explore</a></li>
+						</ul>
+					</div>
+					<div class="sign-group">
+						<div class="btn-group">
+							<a href="" class="btn sign-in">Sign in</a>
+							<a href="" class="btn btn--primary sign-up">Sign up</a>
+						</div>
+						<form id="search-form" method="POST" action="">
+							<input type="text" id="search" class="input--text" placeHolder="Search Github">
+							<input type="submit" value="submit">
+						</form>
+						<ul class="sub-menu float--right">
+							<li><a href="">Pricing</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Support</a></li>
+						</ul>
+					</div>
+				
+				</div>
+			</header>
+			<!-- VISUAL -->
+			<section class="section section--visual">
+				<div class="inner">
+					<div class="summary">
+						<div class="summary__title">
+							How people build&nbsp;software <!-- br은 반응형에서 안되기 떄문에 nbsp 사용 단어를 연결하여 한단어로 만들어줌-->
+						</div>
+						<div class="summary__description">
+							Millions of developers use GitHub to build personal 										projects, support their businesses, and&nbsp;work together 										on open source technologies.
+						</div>
+						
+					</div>
+					<form id="sign-form" method="POST" action=''>
+						<ul>
+							<li><input type ="text" class="input--text" placeHolder="Pick a username"></li>
+							<li><input type ="email" class="input--text" placeHolder="Your email address"></li>
+							<li>
+								<input type ="password" class="input--text" placeHolder="Create a password">
+								<p class="caption">
+									Use at least one letter, one numeral, and seven characters.
+								</p>
+							</li>
+							<li>
+								<!-- 버튼을 div 로 만들면 그냥 모양만 내는것. input or button 으로
+										submit으로 제출하도록 함-->
+								<button type="submit" class="btn btn--primary">
+								Sign up for GitHub.
+								</button>
+								<p class="caption">
+									By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.
+								</p>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</section>
+			<!--FEATURE-->
+			<section class="section section--feature">
+				<div class="summary">
+					<div class="summary__title">
+						
+					</div>
+					<div class="summary__description">
+						
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
